@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ecommerce
 
 An E-Commerce Flutter app
@@ -16,5 +17,3 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 =======
-# FlutterEcommerce
->>>>>>> 1826fb437df473e5955ef09ad4c1537e37eceee0
