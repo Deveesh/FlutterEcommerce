@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:ecommerce/CategoriesList.dart';
 import 'package:ecommerce/RecommendedProducts.dart';
+import 'package:ecommerce/Cart.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -39,7 +40,10 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text("Nymtra"),
         actions: <Widget>[
           new IconButton(icon: Icon(Icons.search, color: Colors.white,), onPressed: (){}),
-          new IconButton(icon: Icon(Icons.shopping_cart, color: Colors.white), onPressed: (){})
+          new IconButton(icon: Icon(Icons.shopping_cart, color: Colors.white), 
+              onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => new Cart()));
+              })
         ],
       ),
       drawer: new Drawer(
