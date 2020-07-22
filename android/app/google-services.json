@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "796767268418",
+    "firebase_url": "https://flutterecommerce-977e0.firebaseio.com",
+    "project_id": "flutterecommerce-977e0",
+    "storage_bucket": "flutterecommerce-977e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796767268418:android:8679e382b4925c7bd7c7db",
+        "android_client_info": {
+          "package_name": "com.deveesh.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796767268418-gjub1aml154h98hfm1e1mkngopi30k21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLYh1x6-z9lggDhW3aWFxUSCcVcB9COb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796767268418-gjub1aml154h98hfm1e1mkngopi30k21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
