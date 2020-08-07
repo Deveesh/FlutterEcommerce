@@ -3,6 +3,7 @@ import 'package:ecommerce/Utils/constants.dart';
 import 'package:ecommerce/models/cart.dart';
 import 'package:ecommerce/models/orders.dart';
 import 'package:ecommerce/models/products.dart';
+import 'package:ecommerce/models/singleProduct.dart';
 import 'package:flutter/material.dart';
 import 'Screens/homeScreen.dart';
 import 'package:provider/provider.dart';
@@ -22,6 +23,7 @@ class MainWidget extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => Cart()),
         ChangeNotifierProvider(create: (context) => Orders()),
         ChangeNotifierProvider(create: (context) => SearchQuery()),
+        ChangeNotifierProvider(create: (context) => SingleProduct("0","0","0","0","0",0,0)),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

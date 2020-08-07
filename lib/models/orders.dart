@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
+import 'package:http/http.dart';
 import 'dart:convert';
 import 'cartProduct.dart';
 import 'singleOrder.dart';
@@ -15,7 +16,7 @@ class Orders with ChangeNotifier {
   }
 
   //Sends order to firebase
-  Future<void> addOrder(List<CartProduct> cartProducts, double total) async {
+  Future<String> addOrder(List<CartProduct> cartProducts, double total) async {
     final url = 'https://flutterecommerce-977e0.firebaseio.com/orders.json';
     final timeStamp = DateTime.now();
     try {
@@ -40,6 +41,7 @@ class Orders with ChangeNotifier {
               amount: total,
               dateTime: timeStamp,
               products: cartProducts));
+      return "";
       notifyListeners();
     } catch (err) {
       throw err;
